@@ -1,0 +1,97 @@
+:root {
+  --height-header: 56px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--height-header);
+  background-color: #ffffff;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.596);
+  //hình ảnh
+  img {
+    height: 32px;
+    cursor: pointer;
+  }
+  .header-test {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 6px;
+    cursor: pointer;
+  }
+  .hearder-todo {
+    padding: 6px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .nav-link.activated {
+    color: #1677ff;
+  }
+  .header-modal {
+    display: none;
+  }
+}
+.ant-drawer.ant-drawer-left.css-dev-only-do-not-override-htwhyh.ant-drawer-open {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    img {
+      height: 28px;
+    }
+  }
+  .header-modal {
+    display: block !important;
+    margin-right: 16px;
+    font-size: 1.13rem;
+    cursor: pointer;
+  }
+  .ant-drawer-wrapper-body {
+    .modal-icon {
+      position: absolute;
+      z-index: 999;
+      top: 10px;
+      right: -15px;
+      height: 24px;
+      width: 24px;
+      background: #fff;
+      line-height: 24px;
+      text-align: center;
+      color: #ccc;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  .hearder-todo {
+    display: none;
+  }
+  .header-test {
+    display: none;
+  }
+  .ant-drawer-content-wrapper {
+    max-width: 256px;
+    min-width: 256px;
+    width: 256px !important;
+    .ant-drawer-body {
+      padding: 0 8px;
+    }
+    p {
+      height: 40px;
+      padding: 0 16px;
+      margin: 4px;
+      font-size: 0.9rem;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      line-height: 40px;
+      cursor: pointer;
+    }
+  }
+  .ant-drawer.ant-drawer-left.css-dev-only-do-not-override-htwhyh.ant-drawer-open {
+    display: block;
+  }
+}

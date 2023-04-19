@@ -1,0 +1,15 @@
+:root {
+  --padding-container: 32px 48px;
+  --height-header: 56px;
+}
+.container {
+  padding: var(--padding-container);
+  margin-top: var(--height-header);
+
+  .container-text {
+    font-size: 1.1rem;
+  }
+  .ant-spin.ant-spin-spinning.css-dev-only-do-not-override-htwhyh {
+    max-height: 40px;
+  }
+}
